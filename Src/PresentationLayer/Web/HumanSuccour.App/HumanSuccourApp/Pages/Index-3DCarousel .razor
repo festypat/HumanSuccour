@@ -1,0 +1,280 @@
+﻿@page "/3d"
+@inject IJSRuntime JS
+
+<section class="section image-infinite-bg position-relative"
+         style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em;">
+    <div class="r-container h-100">
+        <div class="image-overlay"></div>
+        <div class="d-flex flex-column justify-content-center gap-3 h-100 position-relative"
+             style="max-width: 768px; z-index: 2;">
+            <Carousel/>
+        </div>
+    </div>
+</section>
+
+<section class="position-relative" style="margin-top: -80px;">
+    @*     <div class="r-container px-lg-0 px-4">
+    <div class="overflow-hidden rounded-4">
+    <div class="row row-cols-1 row-cols-lg-3">
+    <div class="col bg-accent-color-1 text-white">
+    <div class="d-flex flex-row gap-2 align-items-center  p-4">
+    <div class="rounded-circle bg-accent-color icon-box">
+    <i class="fa-solid fa-user-doctor"></i>
+    </div>
+    <div class="d-flex flex-column">
+    <span class="fw-bold font-1 fs-4">Our Services</span>
+    <span class="fw-bold font-1 fs-3 lh-1">
+    Hourly Visiting
+    </span>
+    </div>
+    </div>
+    </div>
+    <div class="col bg-accent-color text-white ">
+    <div class="d-flex flex-row gap-2 align-items-center  p-4">
+    <div class="rounded-circle bg-accent-color-2 icon-box">
+    <i class="fa-solid fa-stethoscope"></i>
+    </div>
+    <div class="d-flex flex-column">
+    <span class="fw-bold font-1 fs-4">Clinical Advice</span>
+    <span class="fw-bold font-1 fs-3 lh-1">
+    Our Live-In Care
+    </span>
+    </div>
+    </div>
+    </div>
+    <div class="col bg-accent-color-2 text-white">
+    <div class="d-flex flex-row gap-2 align-items-center  p-4">
+    <div class="rounded-circle bg-accent-color-1 icon-box">
+    <i class="fa-solid fa-earth-asia"></i>
+    </div>
+    <div class="d-flex flex-column">
+    <span class="fw-bold font-1 fs-4">Our Expertises</span>
+    <span class="fw-bold font-1 fs-3 lh-1">
+    Dementia Care
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    *@
+</section>
+
+<!-- Welcome To Seniorsy -->
+<section class="section">
+    <div class="r-container">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col mb-3 pe-lg-3 position-relative">
+                <div class="overlay right"></div>
+                <div class="position-relative pe-5">
+                    @*                     <img src="Template/image/dummy-img-600x700.jpg" alt="" class="img-fluid" style="z-index: -2;">
+                    *@
+
+                    <img src="Template/image/H4.jpg" alt="" class="img-fluid" style="z-index: -2;">
+                    <div class="position-absolute bottom-0 start-0 ms-4 mb-4">
+                        <!-- Button trigger modal -->
+                        <div class="d-flex flex-row gap-3 align-items-center">
+                            <button type="button" class="btn request-loader" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <span class="text-white fw-semibold font-1 fs-5">WATCH VIDEO</span>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade bg-overlay" id="exampleModal" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content bg-dark-color">                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="d-flex flex-column gap-3 p-3">
+                    <h6 class="accent-color font-2 ">Welcome To Human Succour</h6>
+                    <h4 class="text-black font-1 lh-1 fw-semibold">
+                        Commitment to Excellence:
+                    </h4>
+                    <p class="text-gray">
+                        We are committed to providing quality care, personalised to meet the needs of each individual, by ensuring our team is well-trained and competent. Our slogan embodies our dedication: “Quality Care, Quality Life”.
+                    </p>
+                    <h4 class="text-black font-1 lh-1 fw-semibold">
+                        What makes Human Succour different?
+                    </h4>
+                    <p>
+                        We value the uniqueness of our service users, staff, and visitors, treating everyone with dignity and respect.
+                        All our carers receive professional and specialised training before being matched to your needs.
+                    </p>
+
+                    <p>
+                        We believe in the right of all service users to make their own choices and decisions.
+                        We are committed to maintaining the privacy of our users and take all necessary measures to protect their personal information.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Types Of Care -->
+<section class="section bg-light">
+    <div class="r-container">
+        <div class="d-flex flex-column gap-3 justify-content-center text-center">
+            <h6 class="accent-color font-2 ">Types Of Care</h6>
+            <h3 class="text-black font-1 lh-1 fw-semibold">Providing Quality Senior Care</h3>
+            <p class="text-gray mx-auto" style="max-width: 768px;">
+                Assistance with dressing, bathing, or toileting. Always respectful and professional.
+            </p>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="card p-3 with-border-bottom border-0 shadow rounded-3">
+                        @*                         <img src="Template/image/dummy-img-600x400.jpg" class="card-img-top rounded-3" alt="...">
+                        *@                        <img src="Template/image/H2.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body ">
+                            <h5 class="font-1 fw-bold">Assisted Living</h5>
+                            <p class="text-gray">
+                                Assistance with dressing, bathing, or toileting. Always respectful and professional.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a type="button" href="#"
+                                   class="btn post-button font-2 d-flex flex-row align-items-center gap-2">
+                                    Read
+                                    More <i class="fa-solid fa-circle-arrow-right mt-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3 with-border-bottom border-0 shadow rounded-3">
+                        @*                         <img src="Template/image/dummy-img-600x400.jpg" class="card-img-top rounded-3" alt="...">
+                        *@                        <img src="Template/image/H2.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body ">
+                            <h5 class="font-1 fw-bold">Eldery Nutrition</h5>
+                            <p class="text-gray">
+                                Assistance with dressing, bathing, or toileting. Always respectful and professional.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a type="button" href="#"
+                                   class="btn post-button font-2 d-flex flex-row align-items-center gap-2">
+                                    Read
+                                    More <i class="fa-solid fa-circle-arrow-right mt-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-3 with-border-bottom border-0 shadow rounded-3">
+                        @*                         <img src="Template/image/dummy-img-600x400.jpg" class="card-img-top rounded-3" alt="...">
+                        *@                        <img src="Template/image/H2.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body ">
+                            <h5 class="font-1 fw-bold">Residential Care</h5>
+                            <p class="text-gray">
+                                Assistance with dressing, bathing, or toileting. Always respectful and professional.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a type="button" href="#"
+                                   class="btn post-button font-2 d-flex flex-row align-items-center gap-2">
+                                    Read
+                                    More <i class="fa-solid fa-circle-arrow-right mt-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center my-4">
+                <a href="#" type="button" class="btn bg-accent-color p-3 font-2">All Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Seniorsy -->
+
+<WhyChooseHumanSuccour />
+
+
+
+<!-- We Care With Compassion -->
+<section class="position-relative" style="background-image: url(Template/image/dummy-img-1920x900.jpg);">
+    <div class="r-container">
+        <div class="image-overlay"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative gap-3"
+             style="z-index: 2; min-height: 70vh;">
+            <div>
+                <!-- Button trigger modal -->
+                <div class="d-flex flex-row gap-3 align-items-center">
+                    <button type="button" class="btn request-loader" data-bs-toggle="modal"
+                            data-bs-target="#videomodal">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+            <h4 class="font-1 text-white fw-bold">We Care With Compassion</h4>
+            <p class="text-white" style="max-width: 768px;">
+                Assistance with dressing, bathing, or toileting. Always respectful and professional.
+            </p>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade bg-overlay" id="videomodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-color">
+             
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What They Say ? -->
+<!-- How It Work ? -->
+<Howitworks />
+
+
+
+@code{
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     try
+    //     {
+    //        // await JS.InvokeAsync<IJSObjectReference>("import", "https://humansuccourcareservices.co.uk/js/sliders.js");
+    //         await JS.InvokeAsync<IJSObjectReference>("import", "/js/sliders.js");
+
+    //     }
+    //     catch (Exception ex)
+    //     {
+
+    //         throw;
+    //     }
+
+    // }
+
+    // protected override async Task OnAfterRenderAsync(bool firstRender)
+    // {
+    //     try
+    //     {
+    //         if (firstRender)
+    //         {
+    //             await JS.InvokeAsync<IJSObjectReference>("import", "/js/sliders.js");
+    //         }
+
+    //         else
+    //         {
+    //             await JS.InvokeAsync<IJSObjectReference>("import", "/js/sliders.js");
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         await JS.InvokeAsync<IJSObjectReference>("import", "/js/sliders.js");
+    //     }
+    // }
+}
